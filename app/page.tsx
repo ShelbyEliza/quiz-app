@@ -8,6 +8,10 @@ export default function Home() {
         <p>Quizzes for all!</p>
       </div>
 
+      <div className={styles.greeting}>
+        <h1>Welcome to Quizness</h1>
+      </div>
+
       <div className={styles.grid}>
         <div className={styles.card}>
           <h2>
@@ -30,7 +34,17 @@ export default function Home() {
           <h2>
             Spelling Quizzes <span>-&gt;</span>
           </h2>
-          <p>Explore the Next.js 13 playground.</p>
+          <p>How well do you spell?</p>
+        </div>
+
+        <div className={styles.card}>
+          <h2>
+            Get to know your friends <span>-&gt;</span>
+          </h2>
+          <p>
+            How well do you really know your friends? How well do they really
+            know you?
+          </p>
         </div>
 
         {/* <a

@@ -34,6 +34,10 @@
   border-radius: var(--border-radius);
 }
 
+.greeting {
+  color: var(--feta);
+}
+
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -97,7 +101,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
