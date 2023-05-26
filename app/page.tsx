@@ -1,4 +1,5 @@
-// import Image from "next/image";
+import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -9,6 +10,14 @@ export default function Home() {
       </div>
 
       <div className={styles.greeting}>
+        <Image
+          priority
+          src="/images/flower.png"
+          className={styles.logo}
+          height={64}
+          width={79}
+          alt="flower icon"
+        />
         <h1>Welcome to Quizness</h1>
       </div>
 
@@ -31,9 +40,11 @@ export default function Home() {
         </div>
 
         <div className={styles.card}>
-          <h2>
-            Spelling Quizzes <span>-&gt;</span>
-          </h2>
+          <Link href="/quizzes">
+            <h2>
+              Spelling Quizzes <span>-&gt;</span>
+            </h2>
+          </Link>
           <p>How well do you spell?</p>
         </div>
 
