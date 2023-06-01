@@ -23,9 +23,11 @@ export default function Home() {
 
       <div className={styles.grid}>
         <div className={styles.card}>
-          <h2>
-            Study Spelling Lists <span>-&gt;</span>
-          </h2>
+          <Link href="/lists">
+            <h2>
+              Study Spelling Lists <span>-&gt;</span>
+            </h2>
+          </Link>
           <p>Check out this week&apos;s words.</p>
         </div>
 
